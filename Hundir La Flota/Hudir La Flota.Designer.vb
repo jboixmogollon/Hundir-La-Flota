@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.beginning = New System.Windows.Forms.Button()
+        Me.mostrar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'beginning
@@ -34,11 +35,21 @@ Partial Class Form1
         Me.beginning.Text = "Inicio"
         Me.beginning.UseVisualStyleBackColor = True
         '
+        'mostrar
+        '
+        Me.mostrar.Location = New System.Drawing.Point(389, 98)
+        Me.mostrar.Name = "mostrar"
+        Me.mostrar.Size = New System.Drawing.Size(75, 23)
+        Me.mostrar.TabIndex = 1
+        Me.mostrar.Text = "Mostrar"
+        Me.mostrar.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(521, 410)
+        Me.Controls.Add(Me.mostrar)
         Me.Controls.Add(Me.beginning)
         Me.Name = "Form1"
         Me.Text = "Hundir La Flota"
@@ -47,4 +58,5 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents beginning As Button
+    Friend WithEvents mostrar As Button
 End Class
