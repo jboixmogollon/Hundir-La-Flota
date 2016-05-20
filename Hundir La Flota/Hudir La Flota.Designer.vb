@@ -28,18 +28,18 @@ Partial Class Form1
         '
         'beginning
         '
-        Me.beginning.Location = New System.Drawing.Point(389, 68)
+        Me.beginning.Location = New System.Drawing.Point(12, 12)
         Me.beginning.Name = "beginning"
-        Me.beginning.Size = New System.Drawing.Size(75, 23)
+        Me.beginning.Size = New System.Drawing.Size(130, 23)
         Me.beginning.TabIndex = 0
-        Me.beginning.Text = "Inicio"
+        Me.beginning.Text = "Generar mapa"
         Me.beginning.UseVisualStyleBackColor = True
         '
         'mostrar
         '
-        Me.mostrar.Location = New System.Drawing.Point(389, 98)
+        Me.mostrar.Location = New System.Drawing.Point(12, 42)
         Me.mostrar.Name = "mostrar"
-        Me.mostrar.Size = New System.Drawing.Size(75, 23)
+        Me.mostrar.Size = New System.Drawing.Size(130, 23)
         Me.mostrar.TabIndex = 1
         Me.mostrar.Text = "Mostrar"
         Me.mostrar.UseVisualStyleBackColor = True
