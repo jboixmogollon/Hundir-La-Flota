@@ -24,6 +24,8 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.beginning = New System.Windows.Forms.Button()
         Me.mostrar = New System.Windows.Forms.Button()
+        Me.l1 = New System.Windows.Forms.Label()
+        Me.ubicar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'beginning
@@ -44,19 +46,41 @@ Partial Class Form1
         Me.mostrar.Text = "Mostrar"
         Me.mostrar.UseVisualStyleBackColor = True
         '
+        'l1
+        '
+        Me.l1.AutoSize = True
+        Me.l1.Location = New System.Drawing.Point(13, 82)
+        Me.l1.Name = "l1"
+        Me.l1.Size = New System.Drawing.Size(0, 13)
+        Me.l1.TabIndex = 2
+        '
+        'ubicar
+        '
+        Me.ubicar.Location = New System.Drawing.Point(12, 72)
+        Me.ubicar.Name = "ubicar"
+        Me.ubicar.Size = New System.Drawing.Size(130, 23)
+        Me.ubicar.TabIndex = 3
+        Me.ubicar.Text = "Ubicar barcos"
+        Me.ubicar.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(521, 410)
+        Me.Controls.Add(Me.ubicar)
+        Me.Controls.Add(Me.l1)
         Me.Controls.Add(Me.mostrar)
         Me.Controls.Add(Me.beginning)
         Me.Name = "Form1"
         Me.Text = "Hundir La Flota"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents beginning As Button
     Friend WithEvents mostrar As Button
+    Friend WithEvents l1 As Label
+    Friend WithEvents ubicar As Button
 End Class
