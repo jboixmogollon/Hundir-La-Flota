@@ -26,6 +26,7 @@ Partial Class Form1
         Me.mostrar = New System.Windows.Forms.Button()
         Me.l1 = New System.Windows.Forms.Label()
         Me.ubicar = New System.Windows.Forms.Button()
+        Me.up_array = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'beginning
@@ -63,11 +64,21 @@ Partial Class Form1
         Me.ubicar.Text = "Ubicar barcos"
         Me.ubicar.UseVisualStyleBackColor = True
         '
+        'up_array
+        '
+        Me.up_array.Location = New System.Drawing.Point(149, 41)
+        Me.up_array.Name = "up_array"
+        Me.up_array.Size = New System.Drawing.Size(129, 23)
+        Me.up_array.TabIndex = 4
+        Me.up_array.Text = "Actualizar Array"
+        Me.up_array.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(521, 410)
+        Me.Controls.Add(Me.up_array)
         Me.Controls.Add(Me.ubicar)
         Me.Controls.Add(Me.l1)
         Me.Controls.Add(Me.mostrar)
@@ -83,4 +94,5 @@ Partial Class Form1
     Friend WithEvents mostrar As Button
     Friend WithEvents l1 As Label
     Friend WithEvents ubicar As Button
+    Friend WithEvents up_array As Button
 End Class

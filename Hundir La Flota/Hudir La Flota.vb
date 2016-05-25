@@ -27,8 +27,12 @@
 
         'xc = CInt(Math.Floor((10 - 0 + 1) * Rnd())) + 0
         'yc = CInt(Math.Floor((10 - 0 + 1) * Rnd())) + 0
-
         MessageBox.Show(c.getXc.ToString + c.getYc.ToString)
 
+    End Sub
+
+    Private Sub up_array_Click(sender As Object, e As EventArgs) Handles up_array.Click
+        salida = g.updateArray().ToString
+        l1.Text = salida
     End Sub
 End Class
