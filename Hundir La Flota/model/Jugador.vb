@@ -6,5 +6,4 @@
         Me.id1 = 1
         Me.id2 = 2
     End Sub
-
 End Class
