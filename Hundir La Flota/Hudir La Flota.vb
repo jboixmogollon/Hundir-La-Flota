@@ -21,18 +21,14 @@
     End Sub
 
     Private Sub ubicar_Click(sender As Object, e As EventArgs) Handles ubicar.Click
-        'Dim c As Cruisser
-        Dim xc As Integer
-        Dim yc As Integer
+        Dim c As New Cruisser
+        c.setXc(InputBox("Introduce X"))
+        c.setYc(InputBox("Introduce Y"))
 
-        xc = InputBox("Establece X")
-        yc = InputBox("Establece Y")
-
-        g.setCruisser(xc, yc)
         'xc = CInt(Math.Floor((10 - 0 + 1) * Rnd())) + 0
         'yc = CInt(Math.Floor((10 - 0 + 1) * Rnd())) + 0
 
-        MessageBox.Show(xc.ToString + yc.ToString)
+        MessageBox.Show(c.getXc.ToString + c.getYc.ToString)
 
     End Sub
 End Class

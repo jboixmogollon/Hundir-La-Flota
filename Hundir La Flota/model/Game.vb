@@ -2,6 +2,7 @@
     Dim x, y As Integer
     Dim terreno(9, 9) As Integer
     Dim salida As String
+    Dim c As Cruisser
 
     Public Function crearArray() As String
         For x = 0 To 9
