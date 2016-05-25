@@ -34,9 +34,10 @@
         xc = InputBox("Establece X")
         yc = InputBox("Establece Y")
 
-        c.ubicacion(xc, yc)
+        'xc = CInt(Math.Floor((10 - 0 + 1) * Rnd())) + 0
+        'yc = CInt(Math.Floor((10 - 0 + 1) * Rnd())) + 0
 
-
+        MessageBox.Show(xc.ToString + yc.ToString)
 
     End Sub
 End Class

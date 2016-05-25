@@ -56,7 +56,7 @@ Partial Class Form1
         '
         'ubicar
         '
-        Me.ubicar.Location = New System.Drawing.Point(12, 72)
+        Me.ubicar.Location = New System.Drawing.Point(148, 12)
         Me.ubicar.Name = "ubicar"
         Me.ubicar.Size = New System.Drawing.Size(130, 23)
         Me.ubicar.TabIndex = 3
