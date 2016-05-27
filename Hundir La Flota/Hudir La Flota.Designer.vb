@@ -22,12 +22,14 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.beginning = New System.Windows.Forms.Button()
         Me.mostrar = New System.Windows.Forms.Button()
         Me.l1 = New System.Windows.Forms.Label()
         Me.up_array = New System.Windows.Forms.Button()
         Me.labelresultado = New System.Windows.Forms.Label()
         Me.disparar = New System.Windows.Forms.Button()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.SuspendLayout()
         '
         'beginning
@@ -82,6 +84,11 @@ Partial Class Form1
         Me.disparar.Text = "Disparar"
         Me.disparar.UseVisualStyleBackColor = True
         '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -106,4 +113,5 @@ Partial Class Form1
     Friend WithEvents up_array As Button
     Friend WithEvents labelresultado As Label
     Friend WithEvents disparar As Button
+    Friend WithEvents NotifyIcon1 As NotifyIcon
 End Class
