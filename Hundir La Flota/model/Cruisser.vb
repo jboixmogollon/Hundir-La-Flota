@@ -1,8 +1,8 @@
 ﻿Public Class Cruisser
     Private x As Integer
     Private y As Integer
-    Dim xc As Integer
-    Dim yc As Integer
+    Private xc As Integer
+    Private yc As Integer
 
     Public Function getUbicacion()
         Return Me.x
