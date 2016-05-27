@@ -11,6 +11,8 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load    'ASIGNAR NOMBRES A LOS JUGADORES
         'name1 = InputBox("Instroduce el nombre del jugador 1")
         'name2 = InputBox("Introduce el nombre del jugador 2")
+        j1.setId1(1)
+        j2.setId2(2)
     End Sub
 
     Private Sub beginning_Click(sender As Object, e As EventArgs) Handles beginning.Click   'AQUI CREAMOS EL MAPA
