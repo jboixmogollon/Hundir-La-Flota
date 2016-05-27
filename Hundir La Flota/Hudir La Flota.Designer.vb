@@ -26,6 +26,8 @@ Partial Class Form1
         Me.mostrar = New System.Windows.Forms.Button()
         Me.l1 = New System.Windows.Forms.Label()
         Me.up_array = New System.Windows.Forms.Button()
+        Me.labelresultado = New System.Windows.Forms.Label()
+        Me.disparar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'beginning
@@ -63,11 +65,30 @@ Partial Class Form1
         Me.up_array.Text = "Actualizar Array"
         Me.up_array.UseVisualStyleBackColor = True
         '
+        'labelresultado
+        '
+        Me.labelresultado.AutoSize = True
+        Me.labelresultado.Location = New System.Drawing.Point(324, 17)
+        Me.labelresultado.Name = "labelresultado"
+        Me.labelresultado.Size = New System.Drawing.Size(0, 13)
+        Me.labelresultado.TabIndex = 5
+        '
+        'disparar
+        '
+        Me.disparar.Location = New System.Drawing.Point(148, 41)
+        Me.disparar.Name = "disparar"
+        Me.disparar.Size = New System.Drawing.Size(129, 23)
+        Me.disparar.TabIndex = 6
+        Me.disparar.Text = "Disparar"
+        Me.disparar.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(521, 410)
+        Me.Controls.Add(Me.disparar)
+        Me.Controls.Add(Me.labelresultado)
         Me.Controls.Add(Me.up_array)
         Me.Controls.Add(Me.l1)
         Me.Controls.Add(Me.mostrar)
@@ -83,4 +104,6 @@ Partial Class Form1
     Friend WithEvents mostrar As Button
     Friend WithEvents l1 As Label
     Friend WithEvents up_array As Button
+    Friend WithEvents labelresultado As Label
+    Friend WithEvents disparar As Button
 End Class
