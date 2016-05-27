@@ -38,4 +38,23 @@
         Next
         Return Me.salida
     End Function
+
+    Public Function shoot() As String
+        salida = ""
+        Dim targetx As Integer = InputBox("Introduce X para disparar")
+        Dim targety As Integer = InputBox("Introduce Y para disparar")
+
+        For x = 0 To 9
+            For y = 0 To 9
+                If x = targetx And y = targety Then
+                    terreno(x, y) = 8
+                Else
+                    salida = salida + terreno(x, y).ToString + "     "
+                End If
+                'salida = salida + terreno(x, y).ToString + "     "
+            Next
+            salida = salida + vbNewLine
+        Next
+        Return Me.salida
+    End Function
 End Class

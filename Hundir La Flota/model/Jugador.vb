@@ -1,6 +1,8 @@
 ﻿Public Class Jugador
     Private id1 As Integer
+    Private n1 As String
     Private id2 As Integer
+    Private n2 As String
 
     Public Sub New()
         Me.id1 = 1
