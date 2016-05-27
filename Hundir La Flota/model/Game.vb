@@ -42,7 +42,7 @@
     Public Function shoot(ByVal shootx As Integer, shooty As Integer)
         Dim shootsalida As String
         If Me.terreno(shootx, shooty) = 2 Then
-            shootsalida = "Tocado"
+            shootsalida = "Tocado y hundido"
         Else
             shootsalida = "Agua"
         End If

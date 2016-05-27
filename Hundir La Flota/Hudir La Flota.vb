@@ -10,10 +10,10 @@
     Dim resultado As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load    'ASIGNAR NOMBRES A LOS JUGADORES
-        name1 = InputBox("Instroduce el nombre del jugador 1")
+        name1 = InputBox("Instroduce el nombre del jugador 1")                      'CREAR EL MAPA EN EL LOAD
         'name2 = InputBox("Introduce el nombre del jugador 2")
         salida = g.crearArray().ToString
-        l1.Text = salida
+        l1.Text = salida                                                            'MOSTRAR MAPA EN EL LOAD
     End Sub
 
     Private Sub beginning_Click(sender As Object, e As EventArgs) Handles beginning.Click   'AQUI CREAMOS EL MAPA
