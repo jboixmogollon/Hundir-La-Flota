@@ -22,31 +22,12 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.beginning = New System.Windows.Forms.Button()
-        Me.mostrar = New System.Windows.Forms.Button()
         Me.l1 = New System.Windows.Forms.Label()
         Me.up_array = New System.Windows.Forms.Button()
         Me.labelresultado = New System.Windows.Forms.Label()
         Me.disparar = New System.Windows.Forms.Button()
+        Me.l2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        '
-        'beginning
-        '
-        Me.beginning.Location = New System.Drawing.Point(12, 12)
-        Me.beginning.Name = "beginning"
-        Me.beginning.Size = New System.Drawing.Size(130, 23)
-        Me.beginning.TabIndex = 0
-        Me.beginning.Text = "Generar mapa"
-        Me.beginning.UseVisualStyleBackColor = True
-        '
-        'mostrar
-        '
-        Me.mostrar.Location = New System.Drawing.Point(12, 42)
-        Me.mostrar.Name = "mostrar"
-        Me.mostrar.Size = New System.Drawing.Size(130, 23)
-        Me.mostrar.TabIndex = 1
-        Me.mostrar.Text = "Mostrar"
-        Me.mostrar.UseVisualStyleBackColor = True
         '
         'l1
         '
@@ -58,11 +39,11 @@ Partial Class Form1
         '
         'up_array
         '
-        Me.up_array.Location = New System.Drawing.Point(148, 12)
+        Me.up_array.Location = New System.Drawing.Point(12, 7)
         Me.up_array.Name = "up_array"
-        Me.up_array.Size = New System.Drawing.Size(129, 23)
+        Me.up_array.Size = New System.Drawing.Size(220, 23)
         Me.up_array.TabIndex = 4
-        Me.up_array.Text = "Actualizar Array"
+        Me.up_array.Text = "Introducir coordenadas de barcos"
         Me.up_array.UseVisualStyleBackColor = True
         '
         'labelresultado
@@ -75,35 +56,40 @@ Partial Class Form1
         '
         'disparar
         '
-        Me.disparar.Location = New System.Drawing.Point(148, 41)
+        Me.disparar.Location = New System.Drawing.Point(12, 36)
         Me.disparar.Name = "disparar"
-        Me.disparar.Size = New System.Drawing.Size(129, 23)
+        Me.disparar.Size = New System.Drawing.Size(220, 23)
         Me.disparar.TabIndex = 6
         Me.disparar.Text = "Disparar"
         Me.disparar.UseVisualStyleBackColor = True
+        '
+        'l2
+        '
+        Me.l2.AutoSize = True
+        Me.l2.Location = New System.Drawing.Point(277, 82)
+        Me.l2.Name = "l2"
+        Me.l2.Size = New System.Drawing.Size(0, 13)
+        Me.l2.TabIndex = 7
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(521, 410)
+        Me.Controls.Add(Me.l2)
         Me.Controls.Add(Me.disparar)
         Me.Controls.Add(Me.labelresultado)
         Me.Controls.Add(Me.up_array)
         Me.Controls.Add(Me.l1)
-        Me.Controls.Add(Me.mostrar)
-        Me.Controls.Add(Me.beginning)
         Me.Name = "Form1"
         Me.Text = "Hundir La Flota"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents beginning As Button
-    Friend WithEvents mostrar As Button
     Friend WithEvents l1 As Label
     Friend WithEvents up_array As Button
     Friend WithEvents labelresultado As Label
     Friend WithEvents disparar As Button
+    Friend WithEvents l2 As Label
 End Class

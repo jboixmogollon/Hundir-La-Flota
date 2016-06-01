@@ -23,6 +23,5 @@
     Public Function getId2()
         Return Me.id2
     End Function
-
     'CREAR SET Y GET PARA EL NOMBRE
 End Class
