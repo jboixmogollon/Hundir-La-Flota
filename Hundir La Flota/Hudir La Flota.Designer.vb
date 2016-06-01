@@ -27,6 +27,7 @@ Partial Class Form1
         Me.labelresultado = New System.Windows.Forms.Label()
         Me.disparar = New System.Windows.Forms.Button()
         Me.l2 = New System.Windows.Forms.Label()
+        Me.labelresultado2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'l1
@@ -41,9 +42,9 @@ Partial Class Form1
         '
         Me.up_array.Location = New System.Drawing.Point(12, 7)
         Me.up_array.Name = "up_array"
-        Me.up_array.Size = New System.Drawing.Size(220, 23)
+        Me.up_array.Size = New System.Drawing.Size(133, 23)
         Me.up_array.TabIndex = 4
-        Me.up_array.Text = "Introducir coordenadas de barcos"
+        Me.up_array.Text = "Generar barcos"
         Me.up_array.UseVisualStyleBackColor = True
         '
         'labelresultado
@@ -58,7 +59,7 @@ Partial Class Form1
         '
         Me.disparar.Location = New System.Drawing.Point(12, 36)
         Me.disparar.Name = "disparar"
-        Me.disparar.Size = New System.Drawing.Size(220, 23)
+        Me.disparar.Size = New System.Drawing.Size(133, 23)
         Me.disparar.TabIndex = 6
         Me.disparar.Text = "Disparar"
         Me.disparar.UseVisualStyleBackColor = True
@@ -71,11 +72,21 @@ Partial Class Form1
         Me.l2.Size = New System.Drawing.Size(0, 13)
         Me.l2.TabIndex = 7
         '
+        'labelresultado2
+        '
+        Me.labelresultado2.AutoSize = True
+        Me.labelresultado2.Location = New System.Drawing.Point(439, 45)
+        Me.labelresultado2.Name = "labelresultado2"
+        Me.labelresultado2.Size = New System.Drawing.Size(39, 13)
+        Me.labelresultado2.TabIndex = 8
+        Me.labelresultado2.Text = "Label1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(521, 410)
+        Me.Controls.Add(Me.labelresultado2)
         Me.Controls.Add(Me.l2)
         Me.Controls.Add(Me.disparar)
         Me.Controls.Add(Me.labelresultado)
@@ -92,4 +103,5 @@ Partial Class Form1
     Friend WithEvents labelresultado As Label
     Friend WithEvents disparar As Button
     Friend WithEvents l2 As Label
+    Friend WithEvents labelresultado2 As Label
 End Class
